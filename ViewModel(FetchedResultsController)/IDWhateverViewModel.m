@@ -18,6 +18,7 @@
     self = [super init];
     if (self) {
         _items= [[NSMutableArray alloc] init];
+        [self update];
     }
     return self;
 }
