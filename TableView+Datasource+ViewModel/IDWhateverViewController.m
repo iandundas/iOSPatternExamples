@@ -21,7 +21,7 @@ static CGFloat CellHeight = 44;
 @implementation IDWhateverViewController
 
 - (instancetype)init {
-    if (self = [super initWithNibName:NSStringFromClass(self.class) bundle:nil]) {
+    if (self = [super initWithNibName:nil bundle:nil]) {
         _viewModel = [[IDWhateverViewModel alloc] init];
         _dataSource = [[IDWhateverDataSource alloc] initWithOwner:self];
 
@@ -36,7 +36,7 @@ static CGFloat CellHeight = 44;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setTitle:@"EditTags"];
+    [self setTitle:@"Whatever"];
 
     [self configureViews];
     [self placeViews];
@@ -77,12 +77,12 @@ static CGFloat CellHeight = 44;
 #pragma mark - TabBar buttons
 
 - (void)didTapCancel:(id)sender {
-//    [self.viewModel.item delete];
+//    [self.viewModel.item delete]; // if needed
     [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didTapSave:(id)sender {
-    //[self.viewModel.item save];
+    //[self.viewModel.item save]; // if needed
     [self.navigationController popViewControllerAnimated:YES];
 }
 

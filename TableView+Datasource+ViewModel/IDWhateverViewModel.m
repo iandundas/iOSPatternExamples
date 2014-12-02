@@ -13,7 +13,7 @@
 @implementation IDWhateverViewModel
 - (id)init{
     if (self= [super init]){
-        _items= [[NSMutableArray alloc] init];
+        _items= [[NSMutableArray alloc] initWithArray:@[@"Test",@"Data"]];
     }
     return self;
 }

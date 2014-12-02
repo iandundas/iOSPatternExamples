@@ -44,7 +44,7 @@ static NSString *CellIdentifier = @"IDWhateverDataSource";
 }
 
 - (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-
+    [cell.textLabel setText:@"Cell"];
 }
 
 @end
