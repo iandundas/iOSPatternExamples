@@ -29,10 +29,10 @@
     NSArray *newItems = self.fetchedResultsController.fetchedObjects;
 
     if (newItems.count == 0){
-        [self setValue:[NSMutableArray array] forKeyPath:@"tasks"];
+        [self setValue:[NSMutableArray array] forKeyPath:@"items"];
     }
     else{
-        // for manipulating the to-many relationship of self->tasks
+        // for manipulating the to-many relationship of self->items
         [self.items removeAllObjects];
         [[self mutableArrayValueForKeyPath:@"items"] addObjectsFromArray:newItems];
     }
